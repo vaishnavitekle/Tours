@@ -1,0 +1,42 @@
+.city-autocomplete {
+  width: 100%;
+  position: relative;
+}
+
+.city-autocomplete input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.city-autocomplete input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Style the datalist dropdown */
+datalist {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  margin-top: 0.25rem;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+datalist option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+datalist option:hover {
+  background-color: #f5f5f5;
+}
